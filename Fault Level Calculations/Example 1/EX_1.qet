@@ -1,0 +1,655 @@
+<project title="Fault Level Calculation" version="0.90">
+    <properties>
+        <property name="saveddate" show="1">2025/04/19</property>
+        <property name="saveddate-eu" show="1">19-04-2025</property>
+        <property name="savedfilename" show="1">EX_1</property>
+        <property name="savedfilepath" show="1">C:/Users/Yasteera/OneDrive/Desktop/EE Portfolio/Fault Level Calculations/EX_1.qet</property>
+        <property name="saveddate-us" show="1">2025-04-19</property>
+        <property name="savedtime" show="1">12:53</property>
+    </properties>
+    <newdiagrams>
+        <border rowsize="80" colsize="60" displayrows="true" rows="8" cols="17" displaycols="true"/>
+        <inset filename="" plant="" displayAt="bottom" locmach="" author="" title="" auto_page_num="Create an auto folio numbering" date="null" folio="%id/%total" indexrev="" version=""/>
+        <conductors bicolor="false" horizontal-alignment="AlignBottom" displaytext="1" condsize="1" bus="" function="" formula="" vertical-alignment="AlignRight" conductor_section="" color2="#000000" horizrotatetext="0" type="multi" dash-size="2" num="_" onetextperfolio="0" numsize="7" conductor_color="" tension_protocol="" text_color="#000000" vertirotatetext="270" cable=""/>
+        <report label="%f-%l%c"/>
+        <xrefs>
+            <xref switchprefix="" slave_label="(%f-%l%c)" displayhas="cross" delayprefix="" xrefpos="" master_label="%f-%l%c" showpowerctc="true" offset="0" type="protection" powerprefix="" snapto="label"/>
+            <xref switchprefix="" slave_label="(%f-%l%c)" displayhas="cross" delayprefix="" xrefpos="AlignTop" master_label="%f-%l%c" showpowerctc="true" offset="40" type="coil" powerprefix="" snapto="label"/>
+            <xref switchprefix="" slave_label="(%f-%l%c)" displayhas="cross" delayprefix="" xrefpos="" master_label="%f-%l%c" showpowerctc="true" offset="0" type="commutator" powerprefix="" snapto="label"/>
+        </xrefs>
+        <conductors_autonums freeze_new_conductors="false" current_autonum=""/>
+        <folio_autonums/>
+        <element_autonums freeze_new_elements="false" current_autonum=""/>
+    </newdiagrams>
+    <diagram title="Single Line Diagram &amp; Fault Level Calculation" displaycols="true" colsize="60" date="20250405" folio="%id/%total" freezeNewConductor="false" order="1" auto_page_num="Create an auto folio numbering" displayrows="true" cols="17" indexrev="" freezeNewElement="false" locmach="" height="660" filename="" rowsize="80" plant="" displayAt="bottom" author="Yasteer Sewpersad" rows="8" version="0.90+c7891bc4cb0a58100c957a06d79751d3">
+        <defaultconductor bicolor="false" horizontal-alignment="AlignBottom" displaytext="1" condsize="1" bus="" function="" formula="" vertical-alignment="AlignRight" conductor_section="" horizrotatetext="0" color2="#000000" type="multi" dash-size="2" num="_" onetextperfolio="0" numsize="7" conductor_color="" tension_protocol="" text_color="#000000" vertirotatetext="270" cable=""/>
+        <elements>
+            <element freezeLabel="false" uuid="{2c9a66b9-927c-4390-9594-8d18d7b1eefa}" x="590" y="450" type="embed://import/10_electric/11_singlepole/500_home_installation/30_architectural/moteur.elmt" prefix="" orientation="0" z="10">
+                <terminals>
+                    <terminal x="0" y="-16" id="0" orientation="0"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation name="label" show="1">M3: 100HP</elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text text_from="ElementInfo" text_width="-1" uuid="{00d4403a-818d-44ae-979d-4c16ea9d0e6b}" frame="false" font="Sans Serif,9,-1,5,50,0,0,0,0,0" x="-20" keep_visual_rotation="false" Valignment="AlignTop" y="10" Halignment="AlignLeft" rotation="0">
+                        <text>M3: 100HP</text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" uuid="{3c78491c-1c47-4054-b210-103f5d6324eb}" x="320" y="450" type="embed://import/10_electric/11_singlepole/500_home_installation/30_architectural/moteur.elmt" prefix="" orientation="0" z="10">
+                <terminals>
+                    <terminal x="0" y="-16" id="1" orientation="0"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation name="label" show="1">M2: 50HP</elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text text_from="ElementInfo" text_width="-1" uuid="{00281888-f900-4565-aa31-fa0a3e7aca87}" frame="false" font="Sans Serif,9,-1,5,50,0,0,0,0,0" x="-20" keep_visual_rotation="false" Valignment="AlignTop" y="10" Halignment="AlignLeft" rotation="0">
+                        <text>M2: 50HP</text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" uuid="{1d2a5c6d-e867-4bb1-b2dd-49ae8fa7bfdb}" x="50" y="110" type="embed://import/10_electric/11_singlepole/330_transformers_power_supplies/10_transformers/transformator_3f_gt_1.elmt" prefix="T" orientation="0" z="10">
+                <terminals>
+                    <terminal x="0" y="-36" id="2" orientation="0"/>
+                    <terminal x="0" y="36" id="3" orientation="2"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation name="label" show="1">Star-Delta Transformer</elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text text_from="ElementInfo" text_width="-1" uuid="{4a91c593-35cd-4a36-ae06-169f2fb40ef1}" frame="false" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="17" keep_visual_rotation="true" Valignment="AlignTop" y="-11.5" Halignment="AlignLeft" rotation="0">
+                        <text>Star-Delta Transformer</text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" uuid="{17dbdea4-e7b3-4ad1-923a-d6b5c0fe185e}" x="50" y="450" type="embed://import/10_electric/11_singlepole/500_home_installation/30_architectural/moteur.elmt" prefix="" orientation="0" z="10">
+                <terminals>
+                    <terminal x="0" y="-16" id="4" orientation="0"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation name="label" show="1">M1: 35HP</elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text text_from="ElementInfo" text_width="-1" uuid="{f1cd7d19-2682-4b6d-af1c-e1990ac85937}" frame="false" font="Sans Serif,9,-1,5,50,0,0,0,0,0" x="-20" keep_visual_rotation="false" Valignment="AlignTop" y="10" Halignment="AlignLeft" rotation="0">
+                        <text>M1: 35HP</text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" uuid="{6dd7225a-3a13-469e-8adc-6df1f1018e1b}" x="860" y="450" type="embed://import/10_electric/11_singlepole/500_home_installation/30_architectural/moteur.elmt" prefix="" orientation="0" z="10">
+                <terminals>
+                    <terminal x="0" y="-16" id="5" orientation="0"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation name="label" show="1">M4: 75HP</elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text text_from="ElementInfo" text_width="-1" uuid="{87d0af77-26a0-4b65-bba6-bd512edf0dfd}" frame="false" font="Sans Serif,9,-1,5,50,0,0,0,0,0" x="-20" keep_visual_rotation="false" Valignment="AlignTop" y="10" Halignment="AlignLeft" rotation="0">
+                        <text>M4: 75HP</text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+        </elements>
+        <conductors>
+            <conductor bicolor="false" horizontal-alignment="AlignBottom" displaytext="1" condsize="1" freezeLabel="false" x="0" bus="" function="" formula="" vertical-alignment="AlignRight" conductor_section="" horizrotatetext="0" color2="#000000" type="multi" dash-size="2" terminal1="{aabe8e81-b037-4954-93b2-6d70025abe1c}" num="" onetextperfolio="0" y="0" numsize="7" tension_protocol="" conductor_color="" element2="{17dbdea4-e7b3-4ad1-923a-d6b5c0fe185e}" element1="{3c78491c-1c47-4054-b210-103f5d6324eb}" terminal2="{aabe8e81-b037-4954-93b2-6d70025abe1c}" text_color="#000000" vertirotatetext="270" cable="">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor bicolor="false" horizontal-alignment="AlignBottom" displaytext="1" condsize="1" freezeLabel="false" x="0" bus="" function="" formula="" vertical-alignment="AlignRight" conductor_section="" horizrotatetext="0" color2="#000000" type="multi" dash-size="2" terminal1="{aabe8e81-b037-4954-93b2-6d70025abe1c}" num="" onetextperfolio="0" y="0" numsize="7" tension_protocol="" conductor_color="" element2="{3c78491c-1c47-4054-b210-103f5d6324eb}" element1="{2c9a66b9-927c-4390-9594-8d18d7b1eefa}" terminal2="{aabe8e81-b037-4954-93b2-6d70025abe1c}" text_color="#000000" vertirotatetext="270" cable="">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor bicolor="false" horizontal-alignment="AlignBottom" displaytext="1" condsize="1" freezeLabel="false" x="0" bus="" function="" formula="" vertical-alignment="AlignRight" conductor_section="" horizrotatetext="0" color2="#000000" type="multi" dash-size="2" terminal1="{aabe8e81-b037-4954-93b2-6d70025abe1c}" num="" onetextperfolio="0" y="0" numsize="7" tension_protocol="" conductor_color="" element2="{2c9a66b9-927c-4390-9594-8d18d7b1eefa}" element1="{6dd7225a-3a13-469e-8adc-6df1f1018e1b}" terminal2="{aabe8e81-b037-4954-93b2-6d70025abe1c}" text_color="#000000" vertirotatetext="270" cable="">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor bicolor="false" horizontal-alignment="AlignBottom" displaytext="1" condsize="1" freezeLabel="false" x="0" bus="" function="" formula="" vertical-alignment="AlignRight" conductor_section="" horizrotatetext="0" color2="#000000" type="multi" dash-size="2" terminal1="{aabe8e81-b037-4954-93b2-6d70025abe1c}" num="" onetextperfolio="0" y="0" numsize="7" tension_protocol="" conductor_color="" element1="{17dbdea4-e7b3-4ad1-923a-d6b5c0fe185e}" terminal2="3" text_color="#000000" vertirotatetext="270" cable="">
+                <segment length="-9" orientation="vertical"/>
+                <segment length="-131" orientation="vertical"/>
+                <segment length="0" orientation="horizontal"/>
+                <segment length="-131" orientation="vertical"/>
+                <segment length="0" orientation="horizontal"/>
+                <segment length="-9" orientation="vertical"/>
+                <sequentialNumbers/>
+            </conductor>
+        </conductors>
+        <inputs>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="70" y="120" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>2500 KVA&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>6.6kV/415V&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>%Z: 5%&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="761.803" y="383.948" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="284.943" y="176.394" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="36.466" y="490.171" rotation="0" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>"/>
+        </inputs>
+        <images>
+            <image x="440" y="30" rotation="0" size="1" z="0" is_movable="1">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</image>
+            <image x="63.6042" y="361.949" rotation="0" size="1" z="0" is_movable="1">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</image>
+            <image x="33.2807" y="508.421" rotation="0" size="1" z="0" is_movable="1">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</image>
+            <image x="40" y="580" rotation="0" size="1" z="0" is_movable="1">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</image>
+            <image x="379.435" y="509.421" rotation="0" size="1" z="0" is_movable="1">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</image>
+            <image x="383.391" y="578.113" rotation="0" size="1" z="0" is_movable="1">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</image>
+        </images>
+        <shapes>
+            <shape y1="500" y2="500" x1="240" closed="0" x2="240" type="Line" is_movable="1" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape y1="500" y2="500" x1="240" closed="0" x2="240" type="Line" is_movable="1" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+        </shapes>
+    </diagram>
+    <collection>
+        <category name="import">
+            <names>
+                <name lang="ca">Elements importats</name>
+                <name lang="es">Elementos importados</name>
+                <name lang="uk">Імпортовані елементи</name>
+                <name lang="en">Imported elements</name>
+                <name lang="el">Εισηγμένα στοιχεία</name>
+                <name lang="hr">Uvezeni elementi</name>
+                <name lang="ru">Импортированные элементы</name>
+                <name lang="ja">インバートされた要素</name>
+                <name lang="pl">Elementy importowane</name>
+                <name lang="cs">Zavedené prvky</name>
+                <name lang="fr">Éléments importés</name>
+                <name lang="pt">elementos importados</name>
+                <name lang="da">Importerede elementer</name>
+                <name lang="ro">Elemente importate</name>
+                <name lang="nl">Elementen geïmporteerd</name>
+                <name lang="it">Elementi importati</name>
+                <name lang="de">Importierte elemente</name>
+                <name lang="tr">İthal öğeler</name>
+                <name lang="sl">Uvoženi elementi</name>
+            </names>
+            <category name="10_electric">
+                <names>
+                    <name lang="en">Electric</name>
+                    <name lang="it">Elettrica</name>
+                    <name lang="nl">Elektrotechniek</name>
+                    <name lang="ja">電気</name>
+                    <name lang="es">Eléctrica</name>
+                    <name lang="de">Elektrik</name>
+                    <name lang="el">Ηλεκτρικά</name>
+                    <name lang="pl">Elektrotechnika</name>
+                    <name lang="da">Elektrisk</name>
+                    <name lang="ru">Электротехника</name>
+                    <name lang="cs">Elektrotechnika</name>
+                    <name lang="fr">Electrique</name>
+                </names>
+                <category name="10_allpole">
+                    <names>
+                        <name lang="en">All-pole</name>
+                        <name lang="it">Multifilare</name>
+                        <name lang="nl">Veel polig</name>
+                        <name lang="ja">複線</name>
+                        <name lang="es">Multifilar</name>
+                        <name lang="el">Πολυγραμμικό</name>
+                        <name lang="de">Allpolig</name>
+                        <name lang="pl">Schematy wieloliniowe</name>
+                        <name lang="da">Flere ledere</name>
+                        <name lang="cs">Vícežilový</name>
+                        <name lang="ru">Многополюсные</name>
+                        <name lang="fr">Multifilaire</name>
+                        <name lang="hu">Többvonalas szimbólumok</name>
+                    </names>
+                    <category name="391_consumers_actuators">
+                        <names>
+                            <name lang="en">Consumers and actuators</name>
+                            <name lang="it">Utilizzatori e attuatori</name>
+                            <name lang="nl">Verbruikers en bewegingen</name>
+                            <name lang="ja">消費装置と作動装置</name>
+                            <name lang="es">Consumibles y actuadores</name>
+                            <name lang="de">Verbraucher und Aktoren</name>
+                            <name lang="el">Καταναλώσεις και ενεργοποιητές</name>
+                            <name lang="pl">Odbiorniki i urządzenia wykonawcze</name>
+                            <name lang="ru">Исполнительные механизмы</name>
+                            <name lang="cs">Spotřebiče</name>
+                            <name lang="fr">Consommateurs et actionneurs</name>
+                        </names>
+                        <category name="10_engines">
+                            <names>
+                                <name lang="en">Engines</name>
+                                <name lang="pt">Motor</name>
+                                <name lang="it">Motori</name>
+                                <name lang="nl">Motor</name>
+                                <name lang="es">Motor</name>
+                                <name lang="ar">محرّك</name>
+                                <name lang="de">Motoren</name>
+                                <name lang="el">Μοτέρ</name>
+                                <name lang="pl">Silniki</name>
+                                <name lang="ru">Двигатели</name>
+                                <name lang="cs">Motory a aktuátory</name>
+                                <name lang="fr">Moteurs</name>
+                            </names>
+                            <element name="moteur_mono1.elmt">
+                                <definition width="50" hotspot_y="27" link_type="simple" hotspot_x="24" type="element" height="60" version="0.80">
+                                    <uuid uuid="{e00c09f2-96d8-4b0c-beba-b358d41b52c5}"/>
+                                    <names>
+                                        <name lang="nl">Motor  1fase</name>
+                                        <name lang="it">Motore monofase</name>
+                                        <name lang="en">Motor single phase</name>
+                                        <name lang="fr">Moteur monophasé</name>
+                                        <name lang="es">Motormonofásico</name>
+                                        <name lang="cs">Jednofázový motor</name>
+                                    </names>
+                                    <elementInformations/>
+                                    <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                                    <description>
+                                        <polygon style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-20" x4="15" y2="9" x3="15" x1="20" antialias="false" x2="20" y3="9" closed="false" y4="9"/>
+                                        <polygon style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-20" y2="10" x3="-15" x1="-20" antialias="false" x2="-20" y3="10" closed="false"/>
+                                        <circle style="line-style:normal;line-weight:normal;filling:none;color:black" diameter="30" x="-15" y="-5" antialias="true"/>
+                                        <text font="Sans Serif,9,-1,5,50,0,0,0,0,0" x="-11" y="17" color="#000000" rotation="0" text="1 ~"/>
+                                        <text font="Sans Serif,8,-1,5,50,0,0,0,0,0" x="-4" y="7" color="#000000" rotation="0" text="M"/>
+                                        <dynamic_text text_from="ElementInfo" text_width="-1" uuid="{02168a47-380e-4a8b-94ba-48ae684a0b3d}" frame="false" font="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Normal" x="18" Valignment="AlignTop" y="4" Halignment="AlignLeft" rotation="0" z="9">
+                                            <text/>
+                                            <info_name>label</info_name>
+                                        </dynamic_text>
+                                        <terminal x="10" y="25" orientation="s"/>
+                                        <terminal x="-20" y="-20" orientation="n"/>
+                                        <terminal x="20" y="-20" orientation="n"/>
+                                    </description>
+                                </definition>
+                            </element>
+                        </category>
+                    </category>
+                    <category name="110_network_supplies">
+                        <names>
+                            <name lang="en">Network sources</name>
+                            <name lang="it">Alimentazione da rete</name>
+                            <name lang="nl">Netvoedingen</name>
+                            <name lang="ja">電源網</name>
+                            <name lang="es">Fuentes de red</name>
+                            <name lang="de">Netzquellen</name>
+                            <name lang="el">Παροχές δικτύου</name>
+                            <name lang="pl">Sieć elektroenergetyczna</name>
+                            <name lang="da">Netværkskilder</name>
+                            <name lang="ru">Подвод питания, сеть</name>
+                            <name lang="cs">Napájení</name>
+                            <name lang="fr">Sources réseau</name>
+                            <name lang="hu">Hálózati források</name>
+                        </names>
+                        <element name="src_1pn.elmt">
+                            <definition width="30" hotspot_y="20" link_type="simple" hotspot_x="15" type="element" height="40" version="0.5">
+                                <uuid uuid="{457a0c01-871c-40fd-83d7-14033333fb95}"/>
+                                <names>
+                                    <name lang="pt">Fonte unipolar + neutro</name>
+                                    <name lang="es">Fuente unipolo + neutro</name>
+                                    <name lang="nl">Wisselspanning L + nul N</name>
+                                    <name lang="el">Μονοφασικό + Ουδέτερος</name>
+                                    <name lang="de">Wechselstrom L + N</name>
+                                    <name lang="cs">Přípojnice 1f+N</name>
+                                    <name lang="pl">Linia jednofazowa (dwuprzewodowa)</name>
+                                    <name lang="it">Sorgente unipolare + neutro</name>
+                                    <name lang="ar">مصدر وحيد القطبية + محايد N</name>
+                                    <name lang="en">Single-pole source + neutral</name>
+                                    <name lang="fr">Source unipolaire + neutre</name>
+                                    <name lang="ru">Однополюсный + нейтраль</name>
+                                    <name lang="hu">F + N</name>
+                                </names>
+                                <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                                <description>
+                                    <input x="-5" y="-25.45" rotate="true" size="9" text="_" tagg="label"/>
+                                    <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-10" y2="-10" length2="1.5" x1="0" antialias="false" x2="10" end1="none" end2="none"/>
+                                    <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="10" y2="10" length2="1.5" x1="0" antialias="false" x2="10" end1="none" end2="none"/>
+                                    <text x="-12" y="13" size="5" text="N"/>
+                                    <text x="-12" y="-7" size="5" text="L"/>
+                                    <terminal x="10" y="-10" orientation="e"/>
+                                    <terminal x="10" y="10" orientation="e"/>
+                                </description>
+                            </definition>
+                        </element>
+                    </category>
+                </category>
+                <category name="91_en_60617">
+                    <names>
+                        <name lang="en">IEC 60617</name>
+                        <name lang="ja">電気用図記号 (JIS C 0617 / IEC 60617)</name>
+                        <name lang="es">IEC 60617</name>
+                        <name lang="de">DIN EN 60617</name>
+                        <name lang="da">DS/IEC 60617</name>
+                        <name lang="cs">EN 60617</name>
+                        <name lang="fr">EN 60617</name>
+                    </names>
+                    <category name="en_60617_06">
+                        <names>
+                            <name lang="en">06- Production and conversion of electrical energy</name>
+                            <name lang="ja">06- 電気エネルギーの発生及び変換</name>
+                            <name lang="es">06- Producción, transformación y conversión de electricidad</name>
+                            <name lang="de">06- Erzeugung und Umwandlung elektrischer Energie</name>
+                            <name lang="da">06- Produktion og omformning af elektrisk energi</name>
+                            <name lang="cs">06- Výroba a přeměna elektrické energie</name>
+                            <name lang="fr">06- Production, transformation et conversion de l'électricité</name>
+                        </names>
+                        <category name="en_60617_06_10">
+                            <names>
+                                <name lang="en">10- Transformers with separate windings</name>
+                                <name lang="ja">10- 別個の巻線を用いる変圧器の例</name>
+                                <name lang="de">10- Beispiele für Transformatren mit getrennten Wicklungen</name>
+                                <name lang="cs">10- Příklady transformátorů s oddělenými vinutími</name>
+                                <name lang="fr">10- Exemples de transformateurs à enroulements séprés</name>
+                            </names>
+                            <element name="en_60617_06_10_08.elmt">
+                                <definition width="120" hotspot_y="217" link_type="simple" hotspot_x="112" type="element" height="220" version="0.70">
+                                    <uuid uuid="{ca8e9d4c-a0c1-4701-b4d1-6ae5e8fdb7b1}"/>
+                                    <names>
+                                        <name lang="fr">Transformateur triphasé, couplage étoile-
+triangle</name>
+                                        <name lang="de">Drehstromtransformator,
+Stern/Dreieckschaltung</name>
+                                        <name lang="cs">Trojfázový transformátor hvězda-trojúhelník</name>
+                                        <name lang="en">Three-phase transformer, connection star-delta</name>
+                                    </names>
+                                    <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                                    <description>
+                                        <input x="5" y="35" rotate="true" size="9" text="_" tagg="label"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-5" start="90" y="-140" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-5" start="90" y="-40" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-55" start="90" y="-140" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-5" start="90" y="-130" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-55" start="90" y="-130" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-55" start="90" y="-40" antialias="true" angle="-180" height="10"/>
+                                        <text x="-92" y="-200" size="9" text="Form 2 / Forme 2"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-55" start="90" y="-150" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-5" start="90" y="-30" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-5" start="90" y="-150" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-55" start="90" y="-160" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-55" start="90" y="-30" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-5" start="90" y="-160" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-5" start="90" y="-170" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-5" start="90" y="-50" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-55" start="90" y="-170" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-55" start="90" y="-50" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-5" start="90" y="-60" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-55" start="90" y="-60" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-5" start="90" y="-70" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-55" start="90" y="-70" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-105" start="90" y="-40" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-105" start="90" y="-30" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-105" start="90" y="-50" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-105" start="90" y="-60" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-105" start="90" y="-70" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-105" start="90" y="-140" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-105" start="90" y="-130" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-105" start="90" y="-150" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-105" start="90" y="-160" antialias="true" angle="-180" height="10"/>
+                                        <arc width="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-105" start="90" y="-170" antialias="true" angle="-180" height="10"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-20" y2="0" length2="1.5" x1="0" antialias="false" x2="0" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-20" y2="0" length2="1.5" x1="-50" antialias="false" x2="-50" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-20" y2="0" length2="1.5" x1="-100" antialias="false" x2="-100" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-70" y2="-80" length2="1.5" x1="-100" antialias="false" x2="-100" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-80" y2="-80" length2="1.5" x1="-100" antialias="false" x2="-60" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-80" y2="-20" length2="1.5" x1="-60" antialias="false" x2="-60" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-20" y2="-20" length2="1.5" x1="-60" antialias="false" x2="-50" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-70" y2="-80" length2="1.5" x1="-50" antialias="false" x2="-50" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-80" y2="-80" length2="1.5" x1="-50" antialias="false" x2="-10" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-80" y2="-20" length2="1.5" x1="-10" antialias="false" x2="-10" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-20" y2="-20" length2="1.5" x1="-10" antialias="false" x2="0" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-20" y2="-20" length2="1.5" x1="-100" antialias="false" x2="-110" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-20" y2="-90" length2="1.5" x1="-110" antialias="false" x2="-110" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-90" y2="-90" length2="1.5" x1="-110" antialias="false" x2="0" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-90" y2="-70" length2="1.5" x1="0" antialias="false" x2="0" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-120" y2="-110" length2="1.5" x1="-100" antialias="false" x2="-100" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-110" y2="-110" length2="1.5" x1="-100" antialias="false" x2="0" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-110" y2="-120" length2="1.5" x1="0" antialias="false" x2="0" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-120" y2="-110" length2="1.5" x1="-50" antialias="false" x2="-50" end1="none" end2="none"/>
+                                    </description>
+                                </definition>
+                            </element>
+                            <element name="en_60617_06_10_07.elmt">
+                                <definition width="110" hotspot_y="180" link_type="simple" hotspot_x="81" type="element" height="200" version="0.70">
+                                    <uuid uuid="{6bba6327-36ef-48b2-a8f3-8459de8b6f40}"/>
+                                    <names>
+                                        <name lang="fr">Transformateur triphasé, couplage étoile-
+triangle</name>
+                                        <name lang="de">Drehstromtransformator,
+Stern/Dreieckschaltung</name>
+                                        <name lang="cs">Trojfázový transformátor hvězda-trojúhelník</name>
+                                        <name lang="en">Three-phase transformer, connection star-delta</name>
+                                    </names>
+                                    <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                                    <description>
+                                        <input x="5" y="25" rotate="true" size="9" text="_" tagg="label"/>
+                                        <circle style="line-style:normal;line-weight:normal;filling:none;color:black" diameter="60" x="-60" y="-120" antialias="false"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-150" y2="-120" length2="1.5" x1="-30" antialias="false" x2="-30" end1="none" end2="none"/>
+                                        <text x="-74" y="-160" size="9" text="Form 1 / Forme 1"/>
+                                        <circle style="line-style:normal;line-weight:normal;filling:none;color:black" diameter="60" x="-60" y="-80" antialias="false"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-20" y2="10" length2="1.5" x1="-30" antialias="false" x2="-30" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-130" y2="-140" length2="1.5" x1="-40" antialias="false" x2="-20" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-135" y2="-145" length2="1.5" x1="-40" antialias="false" x2="-20" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="0" y2="-10" length2="1.5" x1="-40" antialias="false" x2="-20" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="5" y2="-5" length2="1.5" x1="-40" antialias="false" x2="-20" end1="none" end2="none"/>
+                                        <polygon style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-35" x4="-40" y2="-35" x3="-30" x1="-40" antialias="false" x2="-20" y3="-50" closed="false" y4="-35"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-85" y2="-95" length2="1.5" x1="-30" antialias="false" x2="-30" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-95" y2="-100" length2="1.5" x1="-30" antialias="false" x2="-20" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-95" y2="-100" length2="1.5" x1="-30" antialias="false" x2="-40" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-125" y2="-135" length2="1.5" x1="-40" antialias="false" x2="-20" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-5" y2="-15" length2="1.5" x1="-40" antialias="false" x2="-20" end1="none" end2="none"/>
+                                        <terminal x="-30" y="10" orientation="s"/>
+                                        <terminal x="-30" y="-150" orientation="n"/>
+                                    </description>
+                                </definition>
+                            </element>
+                        </category>
+                    </category>
+                </category>
+                <category name="11_singlepole">
+                    <names>
+                        <name lang="en">Single pole</name>
+                        <name lang="it">Unifilare</name>
+                        <name lang="nl">Enkel pool</name>
+                        <name lang="ja">単線</name>
+                        <name lang="es">Polo simple</name>
+                        <name lang="el">Μονογραμμικό</name>
+                        <name lang="de">Einpolig</name>
+                        <name lang="pl">Schematy jednoliniowe</name>
+                        <name lang="da">Enkel leder</name>
+                        <name lang="cs">Jednopólové</name>
+                        <name lang="ru">Однополюсные</name>
+                        <name lang="fr">Unifilaire</name>
+                    </names>
+                    <category name="500_home_installation">
+                        <names>
+                            <name lang="en">Home installation</name>
+                            <name lang="pt">Electrodomésticos</name>
+                            <name lang="it">Impianti civili</name>
+                            <name lang="nl">Huisinstallatie</name>
+                            <name lang="ja">住宅機器</name>
+                            <name lang="es">Electrodoméstico</name>
+                            <name lang="ar">منزليات</name>
+                            <name lang="de">Haustechnik Installation</name>
+                            <name lang="el">Οικιακά</name>
+                            <name lang="pl">Instalacje w obiektach budowlanych</name>
+                            <name lang="ru">Бытовая техника</name>
+                            <name lang="cs">Domácí elektrotechnika</name>
+                            <name lang="fr">Installation domestique</name>
+                        </names>
+                        <category name="30_architectural">
+                            <names>
+                                <name lang="en">Architectural</name>
+                                <name lang="it">Planimetrici</name>
+                                <name lang="nl">Plattegrond</name>
+                                <name lang="es">Arquitectura</name>
+                                <name lang="ar">هندسية</name>
+                                <name lang="de">Architektur</name>
+                                <name lang="el">Αρχιτεκτονικά</name>
+                                <name lang="pl">Rysunek architektoniczno-budowlany</name>
+                                <name lang="ru">Архитектурные</name>
+                                <name lang="cs">Architektura</name>
+                                <name lang="fr">Architecture</name>
+                            </names>
+                            <element name="moteur.elmt">
+                                <definition width="40" hotspot_y="27" link_type="simple" hotspot_x="19" type="element" height="40" version="0.90">
+                                    <uuid uuid="{bf555647-8851-482c-b181-903b3651214e}"/>
+                                    <names>
+                                        <name lang="en">Motor</name>
+                                        <name lang="it">Motore</name>
+                                        <name lang="nl">Motor</name>
+                                        <name lang="ar">مُحرّك</name>
+                                        <name lang="el">Ηλεκτροκινητήρας</name>
+                                        <name lang="de">Motor</name>
+                                        <name lang="pl">Silnik</name>
+                                        <name lang="cs">Motor</name>
+                                        <name lang="fr">Moteur</name>
+                                    </names>
+                                    <elementInformations/>
+                                    <informations>EN 60617: 06-04-01</informations>
+                                    <description>
+                                        <circle style="line-style:normal;line-weight:normal;filling:none;color:black" diameter="35" x="-17.5" y="-25.5" antialias="true"/>
+                                        <dynamic_text text_from="ElementInfo" text_width="-1" uuid="{9cd0d743-dde0-445c-8520-90ec6f0c7fca}" frame="false" font="Sans Serif,9,-1,5,50,0,0,0,0,0" keep_visual_rotation="false" x="13" Valignment="AlignTop" y="-15.95" Halignment="AlignLeft" rotation="0" z="2">
+                                            <text/>
+                                            <info_name>label</info_name>
+                                        </dynamic_text>
+                                        <text font="Sans Serif,9,-1,5,50,0,0,0,0,0" x="-5" y="-4" color="#000000" rotation="0" text="M"/>
+                                        <terminal uuid="{aabe8e81-b037-4954-93b2-6d70025abe1c}" name="" x="0" y="-20" type="Generic" orientation="n"/>
+                                    </description>
+                                </definition>
+                            </element>
+                        </category>
+                    </category>
+                    <category name="330_transformers_power_supplies">
+                        <names>
+                            <name lang="en">Transformators and power supplies</name>
+                            <name lang="it">Trasformatori e alimentatori</name>
+                            <name lang="nl">Transformatoren en Voedingen</name>
+                            <name lang="ja">変圧器と電源</name>
+                            <name lang="es">Transformadores y fuentes de poder</name>
+                            <name lang="de">Transformatoren und Versorgungen</name>
+                            <name lang="el">Μετασχηματιστές και παροχές ισχύος</name>
+                            <name lang="pl">Transformatory i zasilacze</name>
+                            <name lang="ru">Трансформаторы и источники питания</name>
+                            <name lang="cs">Transformátory a napájecí zdroje</name>
+                            <name lang="fr">Transformateurs et alimentations</name>
+                        </names>
+                        <category name="10_transformers">
+                            <names>
+                                <name lang="en">Transformers</name>
+                                <name lang="pt">Transformadores</name>
+                                <name lang="it">Trasformatori</name>
+                                <name lang="nl">Transformatoren</name>
+                                <name lang="es">Transformadores</name>
+                                <name lang="ar">مُحوّلات</name>
+                                <name lang="de">Transformatoren</name>
+                                <name lang="el">Μετασχηματιστές</name>
+                                <name lang="pl">Transformatory</name>
+                                <name lang="ru">Трансформаторы</name>
+                                <name lang="cs">Transformátory</name>
+                                <name lang="fr">Transformateurs</name>
+                            </names>
+                            <element name="transformator_3f_gt_1.elmt">
+                                <definition width="50" ic="true" hotspot_y="45" hotspot_x="17" type="element" height="90" version="0.4">
+                                    <uuid uuid="{2E7C7980-1F5A-4BF2-9924-895504F358E1}"/>
+                                    <names>
+                                        <name lang="en">Three-phase transformer Yd</name>
+                                        <name lang="de">Transformator Stern/Dreieck</name>
+                                        <name lang="it">Trasformatore 3F Yd (forma 1)</name>
+                                        <name lang="fr">Transformateur triphasé etoile triangle</name>
+                                        <name lang="pl">Transformator tyrójfazowy Yd (forma 1)</name>
+                                        <name lang="es">Transformador trifásico Yd</name>
+                                        <name lang="cs">Třífázový transformátor Yd</name>
+                                        <name lang="nl">driefasen transformator Ster driehoek</name>
+                                        <name lang="el">Τριφασικός μετασχηματιστής, αστέρας τρίγωνο</name>
+                                    </names>
+                                    <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                                    <description>
+                                        <polygon style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-16" y2="-13" x3="4" x1="-4" antialias="true" x2="0" y3="-16" closed="false"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="35" y2="31" length2="1.5" x1="-5" antialias="true" x2="5" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-27" y2="-31" length2="1.5" x1="-5" antialias="true" x2="5" end1="none" end2="none"/>
+                                        <circle style="line-style:normal;line-weight:normal;filling:none;color:black" diameter="30" x="-15" y="-25" antialias="true"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="31" y2="27" length2="1.5" x1="-5" antialias="true" x2="5" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-31" y2="-35" length2="1.5" x1="-5" antialias="true" x2="5" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-13" y2="-9" length2="1.5" x1="0" antialias="false" x2="0" end1="none" end2="none"/>
+                                        <circle style="line-style:normal;line-weight:normal;filling:none;color:black" diameter="30" x="-15" y="-5" antialias="true"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-29" y2="-33" length2="1.5" x1="-5" antialias="true" x2="5" end1="none" end2="none"/>
+                                        <polygon style="line-style:normal;line-weight:normal;filling:none;color:black" y1="16" x4="-4" y2="16" x3="0" x1="-4" antialias="true" x2="4" y3="9" y4="16"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-40" y2="-25" length2="1.5" x1="0" antialias="false" x2="0" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="33" y2="29" length2="1.5" x1="-5" antialias="true" x2="5" end1="none" end2="none"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="25" y2="40" length2="1.5" x1="0" antialias="false" x2="0" end1="none" end2="none"/>
+                                        <input x="17" y="0" rotate="true" size="9" text="_" tagg="label"/>
+                                        <terminal name="" x="0" y="-40" orientation="n" nameHidden="0" number=""/>
+                                        <terminal name="" x="0" y="40" orientation="s" nameHidden="0" number=""/>
+                                    </description>
+                                </definition>
+                            </element>
+                        </category>
+                    </category>
+                    <category name="392_generators_sources">
+                        <names>
+                            <name lang="en">Generators and sources</name>
+                            <name lang="it">Generatori e sorgenti</name>
+                            <name lang="nl">Generatoren en Voedingen</name>
+                            <name lang="ja">発電機と電源</name>
+                            <name lang="es">Generadores y fuentes</name>
+                            <name lang="de">Generatoren und Quellen</name>
+                            <name lang="el">Γεννήτριες και πηγές</name>
+                            <name lang="pl">Źródła zasilania</name>
+                            <name lang="ru">Генераторы и источники</name>
+                            <name lang="cs">Generátory a zdroje</name>
+                            <name lang="fr">Générateurs et sources</name>
+                        </names>
+                        <category name="10_generators">
+                            <names>
+                                <name lang="en">Generators</name>
+                                <name lang="it">Generatori</name>
+                                <name lang="nl">Generatoren</name>
+                                <name lang="de">Generatoren</name>
+                                <name lang="el">Γεννήτριες</name>
+                                <name lang="pl">Generatory</name>
+                                <name lang="ru">Генераторы</name>
+                                <name lang="cs">Generátory</name>
+                                <name lang="fr">Générateurs</name>
+                            </names>
+                            <element name="generatrice.elmt">
+                                <definition width="60" hotspot_y="25" hotspot_x="15" type="element" orientation="dnnn" height="40" version="0.3">
+                                    <uuid uuid="{276662F1-CE89-4C9A-91B3-D6276A6EF30E}"/>
+                                    <names>
+                                        <name lang="ar">مُولد</name>
+                                        <name lang="de">Generator</name>
+                                        <name lang="ru">Генератор</name>
+                                        <name lang="pt">Gerador</name>
+                                        <name lang="el">Γεννήτρια</name>
+                                        <name lang="en">Generator</name>
+                                        <name lang="it">Generatore</name>
+                                        <name lang="fr">Génératrice</name>
+                                        <name lang="pl">Generator</name>
+                                        <name lang="es">Generador</name>
+                                        <name lang="cs">Generátor</name>
+                                        <name lang="nl">Generator AC1</name>
+                                        <name lang="be">Generator AC1</name>
+                                    </names>
+                                    <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                                    <description>
+                                        <input x="18" y="0" rotate="true" size="9" text="G_" tagg="label"/>
+                                        <circle style="line-style:normal;line-weight:normal;filling:none;color:black" diameter="21" x="-10.5" y="-10.5" antialias="true"/>
+                                        <circle style="line-style:normal;line-weight:normal;filling:none;color:black" diameter="26" x="-13" y="-13" antialias="true"/>
+                                        <line length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y1="-13" y2="-20" length2="1.5" x1="0" antialias="false" x2="0" end1="none" end2="none"/>
+                                        <text x="-8.25" y="7" size="14" text="G"/>
+                                        <terminal x="0" y="-21" orientation="n"/>
+                                    </description>
+                                </definition>
+                            </element>
+                        </category>
+                    </category>
+                </category>
+            </category>
+        </category>
+    </collection>
+</project>
