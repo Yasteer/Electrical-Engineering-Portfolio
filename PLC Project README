@@ -8,7 +8,7 @@ Welcome to my collection of PLC projects! This space is dedicated to showcasing 
 
 | Project | Description | Link |
 |--------|-------------|------|
-| **Tank Pressure Control** | Simulates a tank with an input control valve managed by a PID controller to maintain a pressure of 200 kPa. Includes pressure transducer feedback and a safety solenoid output valve. | [View Repo](https://github.com/Yasteer/Pressure-Tank-PLC) |
+| **Tank Pressure Control** | Simulates a tank with an input control valve managed by a PID controller to maintain a pressure of 200 kPa. | [View Repo](https://github.com/Yasteer/Pressure-Tank-PLC) |
 
 ---
 
