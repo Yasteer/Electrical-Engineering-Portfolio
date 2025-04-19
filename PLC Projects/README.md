@@ -1,6 +1,6 @@
 # 🧠 PLC Projects Portfolio
 
-Welcome to my collection of PLC projects! This space is dedicated to showcasing automation logic and simulations developed using TwinCAT 3 and Structured Text (ST). Each project highlights a different aspect of control systems engineering.
+Welcome to my collection of PLC projects! This space is dedicated to showcasing automation logic and simulations developed using TwinCAT 3 and Structured Text (ST). Each project highlights a different aspect of control systems engineering. Due to the size of each project, I have created links to each project. Follow the links to gain access to each sample project.
 
 ---
 
