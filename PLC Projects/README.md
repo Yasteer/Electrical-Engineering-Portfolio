@@ -14,6 +14,6 @@ Welcome to my collection of PLC projects! This space is dedicated to showcasing 
 
 ## 📂 How to Use
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Yasteer/Pressure-Tank-PLC.git
+1. Follow each link to its unique repository.
+2. Every repository has a README.md file below the folder structure with a summary of the project.
+3. There is also an archive of each project with the file type .tnzip that holds a compressed version of the whole project should you wish to examine the source code.
