@@ -9,7 +9,7 @@ Welcome to my collection of PLC projects! This space is dedicated to showcasing 
 | Project | Description | Link |
 |--------|-------------|------|
 | **Control Panel Sequencer** | Simulates the startup and shutdown sequence of an industrial control panel using a finite state machine for step management. | [View Repo](https://github.com/Yasteer/Control-Panel-Startup-Shutdown-Sequencer.git) |
-| **Tank Pressure Control** | Simulates a tank with an input control valve managed by a PID controller to maintain a pressure of 200 kPa, assuming a constant drop of 5 kPa. | [View Repo](https://github.com/Yasteer/PID-Tank-Pressure-Control.git) |
+| **Tank Pressure Control** | Simulates a tank with an input control valve managed by a PID controller to maintain a pressure of 200 kPa, assuming a constant drop of 5 kPa. | [View Repo](https://github.com/Yasteer/Pressure-Tank-PID-Control.git) |
 ---
 
 ## 📂 How to Use
