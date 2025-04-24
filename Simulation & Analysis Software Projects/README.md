@@ -10,20 +10,6 @@ The goal of these projects is to demonstrate my ability to:
 - Develop algorithms for system control or signal processing
 - Visualize and interpret simulation results
 
-## 🧰 Tools & Languages
-
-- MATLAB / Simulink
-- C / C++
-- Python (NumPy, SciPy, Matplotlib)
-- Octave (where applicable)
-
-## 📂 Project Structure
-
-Each project has its own subfolder, and includes:
-- 💻 Source Code
-- 📊 Simulation results or plots
-- 📝 A short write-up or theoretical explanation in `README.md`
-
 ## 🔗 Linked Projects
 
 Below are some simulation and software-based projects that are hosted in their own repositories:
@@ -39,6 +25,20 @@ Below are some simulation and software-based projects that are hosted in their o
 
 - 📈 [Multisymbol Trend V1 – MQL5 Trading Bot](https://github.com/Yasteer/MQL5-Automated-Trading/tree/main/MultisymbolTrendV1)  
   *Automated trading strategy in MQL5 using signal analysis and trend logic.*
+
+## 🧰 Tools & Languages
+
+- MATLAB / Simulink
+- C / C++
+- Python (NumPy, SciPy, Matplotlib)
+- Octave (where applicable)
+
+## 📂 Project Structure
+
+Each project has its own subfolder, and includes:
+- 💻 Source Code
+- 📊 Simulation results or plots
+- 📝 A short write-up or theoretical explanation in `README.md`
 
 ## 🚀 Example Topics
 
