@@ -24,6 +24,22 @@ Each project has its own subfolder, and includes:
 - 📊 Simulation results or plots
 - 📝 A short write-up or theoretical explanation in `README.md`
 
+## 🔗 Linked Projects
+
+Below are some simulation and software-based projects that are hosted in their own repositories:
+
+- 🚀 [Doppler Speed Predictor](https://github.com/Yasteer/Doppler-Speed-Predictor)  
+  *MATLAB project to estimate target speed based on Doppler shift calculations.*
+
+- 🕹️ [Retro Game – Asteroid Destroyer](https://github.com/Yasteer/Retro_Game---Asteroid-Destroyer)  
+  *A simple game built in C++ demonstrating graphics handling and basic physics.*
+
+- 🖼️ [Edge Detection](https://github.com/Yasteer/Edge_Detection)  
+  *Image processing project using various edge detection algorithms (Sobel, Canny, etc.).*
+
+- 📈 [Multisymbol Trend V1 – MQL5 Trading Bot](https://github.com/Yasteer/MQL5-Automated-Trading/tree/main/MultisymbolTrendV1)  
+  *Automated trading strategy in MQL5 using signal analysis and trend logic.*
+
 ## 🚀 Example Topics
 
 - Transient response analysis of RLC circuits  
